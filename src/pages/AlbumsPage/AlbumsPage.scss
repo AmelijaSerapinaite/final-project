@@ -1,0 +1,24 @@
+.users-heading{
+    text-align: center;
+    font-size: 32px; 
+}
+.users-wrapper{
+    width: 90%;
+    max-width: 1256px;
+    margin: auto;
+    text-align: center;
+}
+.add-new-btn{
+    text-align: center;
+    margin-bottom: 15px;
+}
+.add-new-btn button{
+    border: 1px solid #ccc;
+    background: #000;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    border-radius: 7px;
+    font-size: 24px;
+    cursor: pointer;
+}
