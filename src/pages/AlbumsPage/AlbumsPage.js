@@ -1,12 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useMemo, useState } from "react";
-<<<<<<< HEAD
 import AlbumForm from "./Components/AlbumForm/AlbumForm";
 import AlbumCard from "./Components/AlbumCard/AlbumCard";
-=======
-import ItemCard from "./components/ItemCard";
-import ItemForm from "./components/ItemForm";
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
 import "./AlbumsPage.scss";
 import Pagination from "../../components/pagination";
 
@@ -105,13 +100,8 @@ const AlbumsPage = () => {
   };
 
   return (
-<<<<<<< HEAD
     <div className="albums">
       <h1 className="heading">Albums ({items.length})</h1>
-=======
-    <div className="users">
-      <h1 className="users-heading">Albums ({items.length})</h1>
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
       <div className="add-new-btn">
         <button
           onClick={() => {
@@ -123,11 +113,7 @@ const AlbumsPage = () => {
         </button>
       </div>
       {formOpen && (
-<<<<<<< HEAD
         <AlbumForm
-=======
-        <ItemForm
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
           loading={loading}
           item={item}
           setItem={setItem}
@@ -137,15 +123,9 @@ const AlbumsPage = () => {
           setFormOpen={setFormOpen}
         />
       )}
-<<<<<<< HEAD
       <div className="albums-wrapper">
         {currentTableData.map((item) => (
           <AlbumCard
-=======
-      <div className="users-wrapper">
-        {currentTableData.map((item) => (
-          <ItemCard
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
             key={item?.id}
             item={item}
             setItem={setItem}
@@ -155,11 +135,7 @@ const AlbumsPage = () => {
           />
         ))}
       </div>
-<<<<<<< HEAD
       <div>
-=======
-      <div className="df jcc">
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
         <Pagination
           className="pagination-bar"
           currentPage={currentPage}
@@ -172,8 +148,4 @@ const AlbumsPage = () => {
   );
 };
 
-<<<<<<< HEAD
 export default AlbumsPage;
-=======
-export default AlbumsPage;
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
