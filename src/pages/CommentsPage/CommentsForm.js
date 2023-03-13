@@ -1,7 +1,6 @@
 import React from 'react';
-import './ItemForm.scss';
 
-const ItemForm = ({
+const CommentsForm = ({
   loading,
   item,
   setItem,
@@ -14,7 +13,7 @@ const ItemForm = ({
     setItem({ ...item, [e.target.name]: e.target.value });
   };
   return (
-    <div className="userForm">
+    <div className="form">
       <form
         onSubmit={(e) => {
           if (editItem) {
@@ -26,20 +25,36 @@ const ItemForm = ({
       >
         <div className="df jcfe">
           <i
-            className="far fa-times userform-close"
+            className="far fa-times form-close"
             onClick={() => setFormOpen(false)}
           ></i>
         </div>
         {loading && <div className="df jcc">Loading...</div>}
         <input
-          className="userForm-input"
-          name="title"
-          value={item.title}
+          className="form-input"
+          name="name"
+          value={item.name}
           type="text"
-          placeholder="title"
+          placeholder="name"
           onChange={handleField}
         />
-        <button type="submit" className="userForm-button">
+        <input
+          className="form-input"
+          name="email"
+          value={item.email}
+          type="email"
+          placeholder="email"
+          onChange={handleField}
+        />
+        <input
+          className="form-input"
+          name="body"
+          value={item.body}
+          type="text"
+          placeholder="body"
+          onChange={handleField}
+        />
+        <button type="submit" className="form-button">
           submit
         </button>
       </form>
@@ -47,4 +62,4 @@ const ItemForm = ({
   );
 };
 
-export default ItemForm;
+export default CommentsForm;
