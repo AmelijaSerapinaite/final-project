@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
@@ -12,18 +11,4 @@ root.render(
       <App />
     </BrowserRouter>
   </React.StrictMode>
-=======
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { BrowserRouter } from 'react-router-dom'
-import App from './App'
-
-const root = ReactDOM.createRoot(document.getElementById('root'))
-root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-        <App />
-        </BrowserRouter>
-    </React.StrictMode>
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
 )

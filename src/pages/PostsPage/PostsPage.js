@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 import axios from "axios";
 import React, { useEffect, useMemo, useState } from "react";
-import PostForm from "./Components/PostForm/PostForm";
-import PostCard from "./Components/PostCard/PostCard";
+import PostForm from "./PostForm";
+import PostCard from "./PostCard";
 import Pagination from "../../components/pagination";
 import './PostsPage.scss'
 
@@ -126,7 +125,7 @@ const PostsPage = () => {
           setFormOpen={setFormOpen}
         />
       )}
-      <div className="posts-wrapper">
+      <div className="wrapper">
         {currentTableData.map((item) => (
           <PostCard
             key={item?.id}
@@ -152,14 +151,4 @@ const PostsPage = () => {
 };
 
 export default PostsPage;
-=======
-import React from 'react'
 
-const PostsPage = () => {
-  return (
-    <div>PostsPage</div>
-  )
-}
-
-export default PostsPage
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b

@@ -57,8 +57,4 @@ export const usePagination = ({
   }, [totalCount, pageSize, siblingCount, currentPage]);
 
   return paginationRange;
-<<<<<<< HEAD
 };
-=======
-};
->>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
