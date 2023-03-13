@@ -1,5 +1,4 @@
 import React from 'react';
-import './PostForm.scss';
 
 const PostForm = ({
   loading,

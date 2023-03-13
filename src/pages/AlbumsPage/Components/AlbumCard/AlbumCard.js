@@ -5,7 +5,7 @@ const AlbumCard = ({ item, setItem, setFormOpen, deleteItem, setEditItem }) => {
   return (
     <div className="card">
       <p>
-        <span>Id:{item.id}</span>
+        <span><b>ID: </b>{item.id}</span>
         &nbsp;&nbsp;
         <i
           className="fas fa-edit cup"
@@ -19,7 +19,7 @@ const AlbumCard = ({ item, setItem, setFormOpen, deleteItem, setEditItem }) => {
         <i className="fas fa-trash cup" onClick={() => deleteItem(item.id)}></i>
       </p>
       <p>
-        <span>Title:</span>
+        <span>Title: </span>
         <span>{item.title}</span>
       </p>
       <img

@@ -2,7 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navigation.scss'
 
-// import icon from 'images/logo.svg'
 
 const Navigation = () => {
 
