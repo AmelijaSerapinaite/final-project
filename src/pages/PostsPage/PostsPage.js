@@ -151,4 +151,7 @@ const PostsPage = () => {
 };
 
 export default PostsPage;
+<<<<<<< HEAD
+=======
 
+>>>>>>> 433a8486187cb0794644cad37dcb148d9c78ba8d

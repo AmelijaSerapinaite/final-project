@@ -134,8 +134,13 @@ const AlbumsPage = () => {
             deleteItem={deleteItem}
           />
         ))}
+<<<<<<< HEAD
+      </div>
+      <div>
+=======
       <div>
       <div className="df jcc">
+>>>>>>> 433a8486187cb0794644cad37dcb148d9c78ba8d
         <Pagination
           className="pagination-bar"
           currentPage={currentPage}
