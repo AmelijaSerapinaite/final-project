@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import axios from "axios";
 import React, { useEffect, useMemo, useState } from "react";
 import PostForm from "./Components/PostForm/PostForm";
@@ -151,3 +152,14 @@ const PostsPage = () => {
 };
 
 export default PostsPage;
+=======
+import React from 'react'
+
+const PostsPage = () => {
+  return (
+    <div>PostsPage</div>
+  )
+}
+
+export default PostsPage
+>>>>>>> 802865f6da552a5dfab6a9fc37739949a420196b
