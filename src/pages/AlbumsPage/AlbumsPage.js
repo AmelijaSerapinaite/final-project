@@ -70,7 +70,7 @@ const AlbumsPage = () => {
     e.preventDefault();
     setLoading(true);
     if (item.title !== "") {
-      fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      fetch(`https://jsonplaceholder.typicode.com/albums/${id}`, {
         method: "PATCH",
         body: JSON.stringify(item),
         headers: {

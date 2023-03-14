@@ -70,7 +70,7 @@ const CommentsPage = () => {
     e.preventDefault();
     setLoading(true);
     if (item.name !== "" && item.email !== "" && item.body !== "") {
-      fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      fetch(`https://jsonplaceholder.typicode.com/comments/${id}`, {
         method: "PATCH",
         body: JSON.stringify(item),
         headers: {

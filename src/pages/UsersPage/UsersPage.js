@@ -48,7 +48,6 @@ const UsersPage = () => {
       })
         .then((response) => response.json())
         .then((json) => {
-          console.log(json);
           setUsers([...users, json]);
           resetUser();
           setLoading(false);
@@ -75,7 +74,7 @@ const UsersPage = () => {
       user.phone !== "" &&
       user.website !== ""
     ) {
-      fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
+      fetch(`https://jsonplaceholder.typicode.com/users/${id}`, {
         method: "PATCH",
         body: JSON.stringify(user),
         headers: {
